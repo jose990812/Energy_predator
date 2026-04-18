@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>PREDATOR</title>
+</head>
+<body>
+    <div class="caixa">
+        <img id = "img" class = "img_fundo"src="fundos/fundopreto.png" alt="img">
+
+        <div class = "caixa1">
+
+            <div class = "caixa2"></div>  
+
+            <div class = "lata">
+                <img  src="latas/preta.png">
+            </div> 
+        </div> 
+        <button class="botao" onclick="onda(event)"><b>COMPRAR AGORA</b></button>
+    </div>
+
+    <script>
+    const imagem = document.querySelector(".lata img");
+
+    const imagens = [
+        "latas/preta.png",
+        "latas/vermelha.png",
+        "latas/branca.png"
+    ];
+
+    let index = 0;
+
+    // começa escondido (no "buraco")
+    imagem.classList.add("sair");
+
+    function trocarLata() {
+
+        // faz descer (sumir)
+        imagem.classList.remove("entrar");
+        imagem.classList.add("sair");
+
+        setTimeout(() => {
+            // troca imagem
+            index = (index + 1) % imagens.length;
+            imagem.src = imagens[index];
+
+            // sobe (aparece)
+            imagem.classList.remove("sair");
+            imagem.classList.add("entrar");
+
+        }, 600); // tempo da animação de saída
+    }
+
+    // primeira entrada
+    setTimeout(() => {
+        imagem.classList.remove("sair");
+        imagem.classList.add("entrar");
+    }, 200);
+
+    // loop sincronizado
+    setInterval(trocarLata, 6666);
+    
+    </script>
+
+    <script>
+    const fundo = document.getElementById("img");
+
+    const imagensFundo = [
+        "fundos/fundopreto.png",
+        "fundos/fundovermelho.png",
+        "fundos/fundobranco.png"
+    ];
+
+    let indexFundo = 0;
+
+    setInterval(() => {
+        indexFundo = (indexFundo + 1) % imagensFundo.length;
+        fundo.src = imagensFundo[indexFundo];
+    }, 6666);
+    </script>
+
+    <script>
+    function onda(e) {
+        const botao = e.currentTarget;
+
+        const circle = document.createElement("span");
+
+        const tamanho = Math.max(botao.clientWidth, botao.clientHeight);
+
+        circle.style.width = circle.style.height = tamanho + "px";
+
+        circle.style.left = e.offsetX - tamanho / 2 + "px";
+        circle.style.top = e.offsetY - tamanho / 2 + "px";
+
+        botao.appendChild(circle);
+
+        setTimeout(() => {
+            circle.remove();
+            // redireciona depois da animação
+            window.location.href = "pgcompras.html";
+        }, 3010);
+    }
+    </script>
+</body>
+</html>

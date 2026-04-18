@@ -1,0 +1,314 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    background-color:  rgb(4, 0, 44);
+
+}
+
+h1, h2, p {
+    margin: 0%;
+    font-family:Georgia;
+    padding-top: 5%;
+}
+
+.text1 {
+
+    background-color: rgb(4, 0, 44);
+}
+
+.text1 h1{
+
+    background: linear-gradient(#fcfcfc,#01a13f, #01a13f);
+    background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 2%;
+}
+
+.text1 p {
+
+    color: rgb(172, 170, 170);
+    text-align: center;
+    font-size: 25px;
+    padding-top: 2%;
+}
+
+
+
+
+
+
+
+.text2 {
+
+    background-color: rgb(4, 0, 44);
+    margin-top: 5%;
+}
+
+.text2 h1 {
+
+    color: white;
+    text-align: center;
+    padding-top: 4%;
+}
+
+.text2 p {
+
+    color: rgb(172, 170, 170);
+    text-align: center;
+    font-size: 20px;
+    padding-top: 2%;
+}
+
+
+
+
+.caixas{
+
+    background-color: rgb(4, 0, 44);
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    padding-top: 5%;
+}
+
+span{
+    font-size: 50px;
+}
+
+.caixa_foco, .caixa_ingredientes, .caixa_zero, .caixa_energia {
+    display: inline-block;
+    transition: transform 0.8s ease;
+    border: solid 0.5px white;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    width: 47%;
+    height: 200px;
+    background-color: rgb(4, 2, 29);
+}
+
+.caixa_foco p, .caixa_ingredientes p, .caixa_zero p, .caixa_energia p{
+
+    color: rgb(172, 170, 170);
+    font-size: 20px;
+    text-align: left;
+
+}
+
+.caixa_energia:hover, .caixa_zero:hover, .caixa_ingredientes:hover, .caixa_foco:hover {
+
+  transform: scale(1.1);
+    box-shadow: 0px 0px 5px rgb(1, 110, 25),
+                0px 0px 10px rgb(1, 110, 25),
+                0px 0px 15px rgb(1, 110, 25);
+}
+
+
+
+.corredor{
+    display: flex;
+    padding: 20px;
+    margin-top: 15%;
+}
+
+.foto_corredor , .text_corredor{
+    height: 700px;
+    width: 600px;
+    border-radius: 5%;
+    overflow: hidden;
+    
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#letra_branca {
+    color: white;
+    font-size: 65px;
+    text-align: center;
+    padding-top: 20%;
+}
+
+#letra_azul {
+    color: rgb(4, 204, 47);
+    font-size: 65px;
+    text-align: center;
+}
+
+.text_pequeno_corredor1 {
+    color: rgb(172, 170, 170);
+    text-align: center;
+    padding-top: 15%;
+    
+}
+
+.text_pequeno_corredor2 {
+    color: rgb(172, 170, 170);
+    font-family: arial;
+    padding-top: 14%;
+    padding-left: 10%;
+    text-align: left;
+}
+
+p {
+    color: rgb(172, 170, 170);
+    text-align: center;
+    padding-top: 2%;
+    font-size: 20px;
+}
+
+.energetico {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    margin-top: 15%;
+    flex-wrap: wrap;
+}
+
+.lata{
+
+    width: 390px;
+    height: 700px;
+    border-radius: 20px;
+    overflow: hidden;
+
+
+}
+
+
+.caixa_lata{
+    padding-top: 1px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    background-color:  black;
+    box-shadow: 0px 0px 5px rgb(255, 255, 255),
+                0px 0px 10px rgb(255, 255, 255),
+                0px 0px 15px rgb(255, 255, 255);
+}
+
+.caixa_lata h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 5%;
+}
+
+.caixa_lata p {
+    color: rgb(172, 170, 170);
+    text-align: center;
+    padding-top: 5%;
+    font-size: 20px;
+}
+
+.adicionar {
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 250px;
+    margin-top: 15%;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-size: larger;
+    font-family: Georgia;
+}
+
+.carrinho{
+    padding: 20px;
+    margin: 20% auto;
+    height: 480px;
+    width: 90%;
+    border-radius: 30px;
+    background: linear-gradient( to left, #033d17, #0d5f2a , #5fff08);
+
+}
+
+.carrinho h2{
+    padding-top: 10%;
+    text-align: center;
+    font-size: 55px;
+}
+
+.text_carrinho{
+    color:#ffffff;
+    font-size: 25px;
+}
+
+.carrinho button {
+
+    display: block;
+    font-family: Arial;
+    font-size: larger;
+    margin: auto;
+    height: 90px;
+    width: 400px;
+    margin-top: 5%;
+    border-radius: 10px;
+    color: #0d5f2a;
+    background-color: rgb(255, 255, 255);
+}
+
+.frete_grats{
+    color: white;
+    font-size: 18px;
+    font-family: Arial;
+}
+
+.adicionar , .carrinho button{
+
+    transition: transform 0.8s ease;
+    cursor: pointer;
+}
+
+.adicionar:hover , .carrinho button:hover{
+
+    transform: scale(1.1);
+}
+
+.caixa_final{
+
+    display: flex;
+    gap: 100px;
+    padding: 20px;
+    justify-content:center;
+    border-bottom: solid 1px white;
+    border-top: solid 1px white;
+
+}
+
+
+.final h3{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.final p {
+
+    text-align: left;
+}
+
+
+footer {
+  background-color: rgb(4, 2, 29);
+  text-align: center;
+  padding: 25px;
+}
+
+
+.text1, .text2, .caixa_energia, .caixa_zero, .caixa_ingredientes, .caixa_foco, .foto_corredor, .text_corredor, .caixa_lata, .carrinho, .final {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+.active {
+  opacity: 1;
+  transform: translateY(0);
+}
