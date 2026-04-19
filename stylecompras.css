@@ -87,7 +87,7 @@ span{
     border-radius: 20px;
     color: white;
     width: 47%;
-    height: 200px;
+    height: auto;
     background-color: rgb(4, 2, 29);
 }
 
