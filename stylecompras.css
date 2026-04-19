@@ -89,6 +89,8 @@ span{
     width: 47%;
     height: auto;
     background-color: rgb(4, 2, 29);
+    box-sizing: border-box;
+    vertical-align: top; 
 }
 
 .caixa_foco p, .caixa_ingredientes p, .caixa_zero p, .caixa_energia p{
